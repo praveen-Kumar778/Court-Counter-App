@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Here we are initializing team A score and team B score which is 0 ;
     int teamascorea =0,teamascoreb = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void display(String message){
-        TextView text = (TextView) findViewById(R.id.teama_score);
+        TextView text =  findViewById(R.id.teama_score);
         text.setText(message);
     }
 
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         displayB(teamascoreb);
     }
     private void displayB(int score){
-        TextView text = (TextView) findViewById(R.id.teamb_score);
+        TextView text =  findViewById(R.id.teamb_score);
         text.setText(String.valueOf(score));
     }
     public void matchFinished(View view){
